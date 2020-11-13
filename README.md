@@ -10,4 +10,4 @@ _My website is a toy_. Remember to **touch my face!**
 
 ## :lemon: **[lemonsaur.us](https://lemonsaur.us)** :lemon:
 
-[![lemonsaurus's github stats](https://github-readme-stats.vercel.app/api?username=lemonsaurus&show_icon=true&theme=synthwave)](https://github.com/anuraghazra/github-readme-stats)
+[![lemonsaurus's github stats](https://github-readme-stats.vercel.app/api?username=lemonsaurus&show_icon=true)](https://github.com/anuraghazra/github-readme-stats)
