@@ -8,6 +8,6 @@ I'm also the owner of a huge Python learning community called [Python Discord](h
 
 My website is a toy. Remember to **touch my face!**
 
-## :lemon: **[https://lemonsaur.us](lemonsaur.us)** :lemon:
+## :lemon: **[lemonsaur.us](https://lemonsaur.us)** :lemon:
 
 [![lemonsaurus's github stats](https://github-readme-stats.vercel.app/api?username=lemonsaurus&show_icon=true&theme=synthwave)](https://github.com/anuraghazra/github-readme-stats)
