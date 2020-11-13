@@ -11,3 +11,5 @@ I'm also the owner of a huge Python learning community called [Python Discord](h
 Go play with my stupid toy website, why don't you?
 
 ## **https://lemonsaur.us**
+
+[![lemonsaurus's github stats](https://github-readme-stats.vercel.app/api?username=lemonsaurus&show_icon=true&theme=synthwave)](https://github.com/anuraghazra/github-readme-stats)
