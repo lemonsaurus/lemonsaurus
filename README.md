@@ -1,16 +1,14 @@
-### Hi there 👋
+### Oh, hi! 👋
 
-<!--
-**lemonsaurus/lemonsaurus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**I'm Leon, although most people call me Lemon:lemon:**.
 
-Here are some ideas to get you started:
+I'm a full-stack engineer who has been writing code for about 12 years. I've worked with SPAs like React and Angular, with graphic design and music, I've managed servers and infrastructure for a major ISP, automated boring stuff for IBM, set up CI/CD and improved deployment pipelines, and most of all, I've written a metric ton of Python code both for private and open-source applications.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+In my day-to-day, I work with Python, Terraform, AWS, Angular, React and PostgreSQL a lot. Right now I'm learning **Kubernetes** 🧊.
+
+I work for a wonderful ⚕️ healthtech ⚕️ company called [Dignio](https://dignio.com), where I help create software that governments and hospitals use to provide remote care for patients. I honestly believe we're part of something important, and I sleep a little better at night knowing I work for the good guys.
+
+I'm also the owner of a huge Python learning community called [Python Discord](https://pythondiscord.com). With a staff of nearly 100 humans, and over 100,000 members in total, it's no small task to keep it operating, but it's where I've met some of my closest friends and where I've learned half of everything I know. If you like Python, you should come check us out!
+
+Go play with my stupid toy website, why don't you?
+**https://lemonsaur.us**
