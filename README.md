@@ -6,7 +6,7 @@ I work for a wonderful ⚕️ healthtech ⚕️ company called [Dignio](https://
 
 I'm also the owner of a huge Python learning community called [Python Discord](https://pythondiscord.com). With a staff of nearly 100 humans, and over 100,000 members in total, it's no small task to keep it operating, but it's where I've met some of my closest friends and where I've learned half of everything I know. If you like Python, [you should come check us out](https://discord.gg/python)!
 
-My website is a toy. Remember to **touch my face!**
+_My website is a toy_. Remember to **touch my face!**
 
 ## :lemon: **[lemonsaur.us](https://lemonsaur.us)** :lemon:
 
