@@ -2,9 +2,7 @@
 
 **I'm Leon, although most people call me Lemon:lemon:**.
 
-I'm a full-stack engineer who has been writing code for about 12 years. I've worked with SPAs like React and Angular, with graphic design and music, I've managed servers and infrastructure for a major ISP, automated boring stuff for IBM, set up CI/CD and improved deployment pipelines, and most of all, I've written a metric ton of Python code both for private and open-source applications.
-
-In my day-to-day, I work with Python, Terraform, AWS, Angular, React and PostgreSQL a lot. Right now I'm learning **Kubernetes** 🧊.
+I'm a full-stack engineer who has been writing code for about 12 years. In my day-to-day, I work with Python, Terraform, AWS, Angular, React and PostgreSQL a lot. Right now I'm learning **Kubernetes** 🧊.
 
 I work for a wonderful ⚕️ healthtech ⚕️ company called [Dignio](https://dignio.com), where I help create software that governments and hospitals use to provide remote care for patients. I honestly believe we're part of something important, and I sleep a little better at night knowing I work for the good guys.
 
