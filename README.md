@@ -1,3 +1,5 @@
+<a href="https://pythondiscord.com"><img width="240" align="right" src="https://github.com/lemonsaurus/lemonsaurus/blob/main/ducky.png?raw=true"></a>
+
 **I'm Leon, but most people call me Lemon**.
 
 I'm a full-stack engineer who has been writing code for about 12 years. In my day-to-day, I work with **Python**, **Javascript**, **Terraform**, **AWS** and **Angular** a lot. Right now I'm learning **Kubernetes** 🧊.
