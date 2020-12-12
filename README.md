@@ -8,7 +8,7 @@ I work for a wonderful ⚕️ healthtech ⚕️ company called [Dignio](https://
 
 I'm also the owner of a huge Python learning community called [Python Discord](https://pythondiscord.com). With a staff of nearly 100 humans, and over 100,000 members in total, it's no small task to keep it operating, but it's where I've met some of my closest friends and where I've learned half of everything I know. If you like Python, [you should come check us out](https://discord.gg/python)!
 
-If you check out my website, _remember to **touch my face!**_
+If you check out [my website](https://lemonsaur.us/), _remember to **touch my face!**_
 
 [![lemonsaur.us](https://img.shields.io/badge/lemonsaur.us-252422?style=for-the-badge&logoColor=white&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFFQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////CDfnXgAAABt0Uk5TADBvf08/v/9AEO9gwKCfIN8vzw9wUIDwH6+w79xtGgAAAKpJREFUeJx1ktEWgiAQBRctLygiJEL1/x/apmaCcJ84M7ssByA6IpqWc7s3HTp5UNX2OOdnhhQDeuMjL42YzmblGrCCnMk7uP6hZpNs5b/7Mydn0xk8XPWwyuXDF6IAuDmrBwJRhCGTcxaCG9yFs/DA81US4Qq341aEqIhIFcGnXYoNikiWxMA35Qt83K88z3t9i0r9tSMO+2unw2NQx/+QGtrLJXC8+H+mD2MlECdQPd30AAAAAElFTkSuQmCC)](https://lemonsaur.us)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lemonsaurus)
