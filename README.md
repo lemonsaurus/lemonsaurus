@@ -2,7 +2,7 @@
 
 **I'm Leon, but most people call me Lemon**.
 
-I'm a full-stack engineer who has been writing code for about 12 years. In my day-to-day, I work with **Python**, **Javascript**, **Terraform**, **AWS** and **Angular** a lot. Right now I'm learning **Kubernetes** 🧊.
+I'm a full-stack engineer who has been writing code for about 12 years. In my day-to-day, I work with **Python**, **Javascript**, **Terraform**, **AWS** and **Angular** a lot. Right now I'm learning **Kubernetes**.
 
 I work for a wonderful ⚕️ healthtech ⚕️ company called [Dignio](https://dignio.com), where I help create software that governments and hospitals use to provide remote care for patients. I honestly believe we're part of something important, and I sleep a little better at night knowing I work for the good guys.
 
