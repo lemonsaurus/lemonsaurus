@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=roboto&color=%23F7C51D&size=18&vCenter=true&height=16&lines=Hi+there%2C+I'm+lemonsaurus.;Hi+there%2C+I'm+Leon+Sand%C3%B8y.;Hi+there%2C+you+can+call+me+Lemon.;Hi+there%2C+I'm+a+content+creator.;Hi+there%2C+I'm+a+software+engineer.;Hi+there%2C+I'm+a+musician.)](https://lemonsaur.us)
 
-I make stuff. Sometimes people like the stuff I make. 🍋
+I make stuff. Sometimes people like the stuff I make. 🍋 
 
 You might know me as one of the owners of [Python Discord](https://pythondiscord.com), as a [musician](https://soundcloud.com/lemonsaurusrex), as a [YouTuber](https://www.youtube.com/channel/UCs9yhbwxkAGzPC4Tw7aMqwA), a [game developer](https://lemonsaurus.itch.io/), or as an open-source maintainer of packages like [blackbox](https://github.com/lemonsaurus/blackbox) and [django-simple-bulma](https://github.com/lemonsaurus/django-simple-bulma). Maybe I was on a [podcast](https://talkpython.fm/episodes/show/305/python-community-at-python-discord) you listened to, or maybe you heard [The PEP8 Song](https://www.youtube.com/watch?v=wNcobO-TAyY).
 
