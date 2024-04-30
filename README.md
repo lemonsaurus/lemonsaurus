@@ -1,6 +1,6 @@
 <a href="https://pythondiscord.com"><img width="240" align="right" src="https://github.com/lemonsaurus/lemonsaurus/blob/main/ducky.png?raw=true"></a>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=roboto&color=%23F7C51D&size=18&vCenter=true&height=16&lines=Hi+there%2C+I'm+lemonsaurus.;Hi+there%2C+I'm+Leon+Sand%C3%B8y.;Hi+there%2C+you+can+call+me+Lemon.;Hi+there%2C+I'm+a+content+creator.;Hi+there%2C+I'm+a+software+engineer.;Hi+there%2C+I'm+a+musician.)](https://lemonsaur.us)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=roboto&color=%23F7C51D&size=18&vCenter=true&height=16&lines=Hi+there%2C+I'm+lemonsaurus.;But+you+can+call+me+Lemon.;I'm+the+CTO+of+a+company+called+ion8.;I+make+stuff!;I'm+a+software+engineer,;a+musician,;and+the+proud+father+of+two+smartasses.)](https://lemonsaur.us)
 
 I make stuff. Sometimes people like the stuff I make. 🍋
 
