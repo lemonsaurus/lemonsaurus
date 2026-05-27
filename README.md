@@ -17,3 +17,15 @@ Some stuff I did:
 [![lemonsaur.us](https://img.shields.io/badge/lemonsaur.us-252422?style=for-the-badge&logoColor=white&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFFQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////CDfnXgAAABt0Uk5TADBvf08/v/9AEO9gwKCfIN8vzw9wUIDwH6+w79xtGgAAAKpJREFUeJx1ktEWgiAQBRctLygiJEL1/x/apmaCcJ84M7ssByA6IpqWc7s3HTp5UNX2OOdnhhQDeuMjL42YzmblGrCCnMk7uP6hZpNs5b/7Mydn0xk8XPWwyuXDF6IAuDmrBwJRhCGTcxaCG9yFs/DA81US4Qq341aEqIhIFcGnXYoNikiWxMA35Qt83K88z3t9i0r9tSMO+2unw2NQx/+QGtrLJXC8+H+mD2MlECdQPd30AAAAAElFTkSuQmCC)](https://lemonsaur.us)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lemonsaurus)
 
+---
+
+## Fresh terminal setup
+
+SSH into a fresh Debian/Ubuntu box and run:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/lemonsaurus/lemonsaurus/main/terminal.sh | bash
+```
+
+This chains everything in the right order: prereqs, `bat`, `gh` CLI, interactive `gh auth` (SSH), [dotfiles](https://github.com/lemonsaurus/dotfiles), Claude Code, [agency](https://github.com/lemonsaurus/agency) + claudejail, and [dotagents](https://github.com/lemonsaurus/dotagents). Idempotent — safe to re-run if a step fails.
+
