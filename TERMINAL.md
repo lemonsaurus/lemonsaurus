@@ -1,11 +1,9 @@
----
-
 ## Fresh terminal setup
 
-SSH into a fresh Debian/Ubuntu box and run:
+On any debian box, run
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/lemonsaurus/lemonsaurus/main/terminal.sh | bash
 ```
 
-This chains everything in the right order: prereqs, `bat`, `gh` CLI, interactive `gh auth` (SSH), [dotfiles](https://github.com/lemonsaurus/dotfiles), Claude Code, [agency](https://github.com/lemonsaurus/agency) + claudejail, and [dotagents](https://github.com/lemonsaurus/dotagents). Idempotent — safe to re-run if a step fails.
+This sets up agency, claude code, gh, claudejail, dotagents and dotfiles. Note: This only works if you are lemon. For anyone else, this will break. Not all the stuff in here is public packages.
