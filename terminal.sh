@@ -4,13 +4,14 @@
 #
 # Installs, in order:
 #   1. apt prerequisites (curl, git, build tools)
-#   2. bat (from GitHub release .deb — apt's version is too old on most boxes)
-#   3. gh CLI (GitHub's official apt repo)
-#   4. gh auth login (interactive — sets up SSH key for private repos)
-#   5. dotfiles  (zsh, starship, eza, plugins, configs)
-#   6. Claude Code
-#   7. agency + claudejail (with bubblewrap)
-#   8. dotagents
+#   2. swap (added on small boxes — Claude Code's installer gets OOM-killed otherwise)
+#   3. bat (from GitHub release .deb — apt's version is too old on most boxes)
+#   4. gh CLI (GitHub's official apt repo)
+#   5. gh auth login (interactive — sets up SSH key for private repos)
+#   6. dotfiles  (zsh, starship, eza, plugins, configs)
+#   7. Claude Code
+#   8. agency + claudejail (with bubblewrap)
+#   9. dotagents
 #
 # Usage:
 #   curl -fsSL https://raw.githubusercontent.com/lemonsaurus/lemonsaurus/main/terminal.sh | bash
@@ -20,7 +21,7 @@
 set -euo pipefail
 
 bold="\033[1m"; cyan="\033[36m"; green="\033[32m"; yellow="\033[33m"; red="\033[31m"; reset="\033[0m"
-step() { printf "\n${bold}${cyan}==> [%d/8] %s${reset}\n" "$1" "$2"; }
+step() { printf "\n${bold}${cyan}==> [%d/9] %s${reset}\n" "$1" "$2"; }
 ok()   { printf "${bold}${green}  ✓${reset} %s\n" "$*"; }
 warn() { printf "${bold}${yellow}  !${reset} %s\n" "$*"; }
 fail() { printf "${bold}${red}  ✗${reset} %s\n" "$*" >&2; exit 1; }
@@ -36,8 +37,29 @@ sudo apt-get update -y
 sudo apt-get install -y curl git ca-certificates wget build-essential
 ok "prerequisites installed"
 
-# ── 2. bat (from GitHub release; apt versions on older Ubuntu are too old) ──
-step 2 "bat"
+# ── 2. swap (Claude Code's installer gets OOM-killed on small boxes) ───────
+step 2 "swap"
+if [ -n "$(swapon --show 2>/dev/null)" ]; then
+    ok "swap already configured"
+else
+    MEM_MB=$(awk '/MemTotal/ {print int($2/1024)}' /proc/meminfo)
+    if [ "$MEM_MB" -lt 4096 ]; then
+        warn "only ${MEM_MB}MB RAM and no swap — adding 2G swapfile"
+        sudo fallocate -l 2G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+        sudo chmod 600 /swapfile
+        sudo mkswap /swapfile
+        sudo swapon /swapfile
+        if ! grep -q '^/swapfile' /etc/fstab; then
+            echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab >/dev/null
+        fi
+        ok "2G swap added"
+    else
+        ok "${MEM_MB}MB RAM — no swap needed"
+    fi
+fi
+
+# ── 3. bat (from GitHub release; apt versions on older Ubuntu are too old) ──
+step 3 "bat"
 if command -v bat >/dev/null || command -v batcat >/dev/null; then
     ok "bat already installed"
 else
@@ -49,8 +71,8 @@ else
     ok "bat ${BAT_VERSION} installed"
 fi
 
-# ── 3. gh CLI ───────────────────────────────────────────────────────────────
-step 3 "gh CLI"
+# ── 4. gh CLI ───────────────────────────────────────────────────────────────
+step 4 "gh CLI"
 if command -v gh >/dev/null; then
     ok "gh already installed"
 else
@@ -68,8 +90,8 @@ else
     ok "gh installed"
 fi
 
-# ── 4. gh auth login (interactive) ──────────────────────────────────────────
-step 4 "GitHub auth"
+# ── 5. gh auth login (interactive) ──────────────────────────────────────────
+step 5 "GitHub auth"
 if gh auth status >/dev/null 2>&1; then
     ok "gh already authenticated"
 else
@@ -85,13 +107,13 @@ if ! ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -T git@github.com 
     gh auth setup-git || true
 fi
 
-# ── 5. dotfiles ─────────────────────────────────────────────────────────────
-step 5 "dotfiles"
+# ── 6. dotfiles ─────────────────────────────────────────────────────────────
+step 6 "dotfiles"
 curl -fsSL "https://raw.githubusercontent.com/lemonsaurus/dotfiles/main/setup.sh?$(date +%s)" | bash
 ok "dotfiles installed"
 
-# ── 6. Claude Code ──────────────────────────────────────────────────────────
-step 6 "Claude Code"
+# ── 7. Claude Code ──────────────────────────────────────────────────────────
+step 7 "Claude Code"
 if command -v claude >/dev/null; then
     ok "claude already installed"
 else
@@ -99,8 +121,8 @@ else
     ok "Claude Code installed"
 fi
 
-# ── 7. agency + claudejail ──────────────────────────────────────────────────
-step 7 "agency + claudejail"
+# ── 8. agency + claudejail ──────────────────────────────────────────────────
+step 8 "agency + claudejail"
 AGENCY_DIR="$HOME/git/lemonsaurus/agency"
 if [ ! -d "$AGENCY_DIR/.git" ]; then
     mkdir -p "$(dirname "$AGENCY_DIR")"
@@ -112,8 +134,8 @@ sudo apt-get install -y bubblewrap
 make -C "$AGENCY_DIR" install-claudejail
 ok "agency + claudejail installed"
 
-# ── 8. dotagents ────────────────────────────────────────────────────────────
-step 8 "dotagents"
+# ── 9. dotagents ────────────────────────────────────────────────────────────
+step 9 "dotagents"
 curl -fsSL https://raw.githubusercontent.com/lemonsaurus/lemonsaurus/main/dotagents.sh | bash
 ok "dotagents installed"
 
