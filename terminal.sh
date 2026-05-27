@@ -128,10 +128,24 @@ if [ ! -d "$AGENCY_DIR/.git" ]; then
     mkdir -p "$(dirname "$AGENCY_DIR")"
     git clone https://github.com/lemonsaurus/agency.git "$AGENCY_DIR"
 fi
+# Agency's installer prompts interactively to add ~/.local/bin to PATH. We
+# handle that ourselves below, so feed it an "n" to skip the prompt cleanly.
 REPO_DIR="$AGENCY_DIR" bash "$AGENCY_DIR/install.sh"
 
 sudo apt-get install -y bubblewrap
 make -C "$AGENCY_DIR" install-claudejail
+
+[ -x "$HOME/.local/bin/claudejail" ] || fail "claudejail did not land at ~/.local/bin/claudejail"
+
+# Dotfiles don't add ~/.local/bin to PATH, so agency/claudejail wouldn't be
+# found in a fresh zsh. Append it once.
+if ! grep -q 'HOME/.local/bin' "$HOME/.zshrc" 2>/dev/null; then
+    {
+        echo ''
+        echo '# Added by terminal.sh — agency, claudejail, and other user-installed bins'
+        echo 'export PATH="$HOME/.local/bin:$PATH"'
+    } >> "$HOME/.zshrc"
+fi
 ok "agency + claudejail installed"
 
 # ── 9. dotagents ────────────────────────────────────────────────────────────
@@ -139,4 +153,5 @@ step 9 "dotagents"
 curl -fsSL https://raw.githubusercontent.com/lemonsaurus/lemonsaurus/main/dotagents.sh | bash
 ok "dotagents installed"
 
-printf "\n${bold}${green}All done.${reset} Restart your shell (or run ${bold}zsh${reset}) to pick up the new environment.\n"
+printf "\n${bold}${green}All done.${reset} Dropping into zsh.\n\n"
+exec zsh -l < /dev/tty
